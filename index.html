@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PathakQuest</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <header>
+        <h1>🎮 PathakQuest</h1>
+        <nav>
+          <button onclick="scrollToSection('home')">Home</button>
+          <button onclick="scrollToSection('projects')">Projects</button>
+          <button onclick="scrollToSection('contact')">Contact</button>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home" class="card fade-in">
+          <div class="intro">
+            <i class="bi bi-controller icon"></i>
+            <h2>Welcome, Hero!</h2>
+            <p>
+              Embark on a journey through my world of web development, AI/ML,
+              and robotics.
+            </p>
+            <div class="buttons">
+              <button
+                class="fancy-button"
+                onclick="scrollToSection('projects')"
+              >
+                Go to Projects
+              </button>
+              <button class="fancy-button" onclick="scrollToSection('contact')">
+                Contact Me
+              </button>
+            </div>
+          </div>
+
+          <div class="profile">
+            <img src="profile.jpg" alt="Profile Photo" />
+            <h3>Shubham Pathak</h3>
+            <p>Web Developer | AI/ML | Robotics | Tech Explorer</p>
+          </div>
+        </section>
+
+        <section class="card fade-in" id="about">
+          <h2><i class="bi bi-person icon"></i> About Me</h2>
+          <div class="profile">
+            <img
+              src="photo.jpg"
+              alt="About Photo"
+              style="
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+                border: 3px solid #9b5de5;
+              "
+            />
+          </div>
+          <p>
+            I’m Shubham Pathak, passionate about fusing innovation with
+            practicality. I build tech-infused projects involving web,
+            game-inspired design, and smart bots using microcontrollers like
+            ESP32.
+          </p>
+          <div class="socials">
+            <a
+              href="https://www.instagram.com/whoisshubhamm_?igsh=ZzRzb2F2Nmpsampr"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/shubham-pathak-41b4a732b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="https://github.com/ShubhmPathak02"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+        </section>
+
+        <section class="card fade-in">
+          <h2><i class="bi bi-mortarboard icon"></i> My Educational Journey</h2>
+          <div class="education">
+            <div class="edu-item">
+              <img src="dhtsvm.jpg" alt="High School" />
+              <div>
+                <strong>High School</strong>
+                <p>DHT Saraswati Vidya Mandir</p>
+                <p>Scored 92.8%</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <img src="dhtsvm.jpg" alt="Higher Secondary" />
+              <div>
+                <strong>Higher Secondary</strong>
+                <p>DHT Saraswati Vidya Mandir</p>
+                <p>Scored 92.8%</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <img src="nit hamirpur.jpg" alt="NIT Hamirpur" />
+              <div>
+                <strong>B.Tech - ECE'28</strong>
+                <p>NIT Hamirpur</p>
+                <p>CGPA: 9.05 (Till 2nd Sem)</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="card fade-in">
+          <h2><i class="bi bi-folder icon"></i> Projects</h2>
+          <div class="projects">
+            <div class="project">
+              <a href="gesture.html">
+                <img src="gest.jpg" alt="Gesture Project" />
+                <h3>Gesture Controlled Bot</h3>
+                <p>Controlled by hand gestures using open cv.</p>
+              </a>
+              <a href="https://github.com/ShubhmPathak02"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
+            <div class="project">
+              <a href="smart-glasses.html">
+                <img src="smtgls.jpg" alt="Smart Glasses" />
+                <h3>Smart Glasses</h3>
+                <p>
+                  Capture environmental data for Alzheimer’s and surveillance.
+                </p>
+              </a>
+              <a href="https://github.com/ShubhmPathak02/Smart-Glasses"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
+            <div class="project">
+              <a href="sign-speech.html">
+                <img src="signtospeech.jpg" alt="Sign to Speech" />
+                <h3>Sign to Speech</h3>
+                <p>Glove system that converts sign language into voice.</p>
+              </a>
+              <a href="https://github.com/ShubhmPathak02"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="card fade-in">
+          <h2><i class="bi bi-envelope icon"></i> Contact Me</h2>
+          <p>Let's create something epic together.</p>
+          <div class="socials">
+            <a
+              href="https://www.instagram.com/whoisshubhamm_?igsh=ZzRzb2F2Nmpsampr"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/shubham-pathak-41b4a732b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="https://github.com/ShubhmPathak02"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+          <a href="mailto:onlypathakshubham@gmail.com" class="email-button"
+            >Send Email</a
+          >
+        </section>
+      </main>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
